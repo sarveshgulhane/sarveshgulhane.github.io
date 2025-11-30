@@ -1,31 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Testing the React for this site.
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app">
+      <Navbar />
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="education">
+          <Education />
+        </section>
+        <section id="blog">
+          <Blog />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
