@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <p>© {year} Sarvesh Gulhane. All rights reserved.</p>
-      <p className="muted">Built with React and AI.</p>
+      <p className="muted">Built with React, Bun and AI.</p>
     </footer>
   );
 };
