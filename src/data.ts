@@ -1,4 +1,3 @@
-// Types
 export interface HeroData {
   name: string;
   role: string;
@@ -89,8 +88,6 @@ export interface ContactData {
   socials: SocialLink[];
 }
 
-// Dummy content
-
 export const HERO: HeroData = {
   name: "Sarvesh Gulhane",
   role: "AI/ML Engineer & Data Scientist",
@@ -135,6 +132,17 @@ export const SKILLS: SkillsData = {
       ],
     },
     {
+      label: "Backend & Databases",
+      items: [
+        "FastAPI",
+        "PostgreSQL",
+        "Neo4j",
+        "SQLAlchemy",
+        "pydantic",
+        "REST APIs",
+      ],
+    },
+    {
       label: "ML & Analytics",
       items: [
         "Regression",
@@ -162,17 +170,6 @@ export const SKILLS: SkillsData = {
         "LangChain",
         "Hugging Face",
         "Ollama",
-      ],
-    },
-    {
-      label: "Backend & Databases",
-      items: [
-        "FastAPI",
-        "PostgreSQL",
-        "Neo4j",
-        "SQLAlchemy",
-        "pydantic",
-        "REST APIs",
       ],
     },
     {
