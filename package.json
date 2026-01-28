@@ -1,8 +1,8 @@
 {
-  "name": "sarveshgulhane.github.io",
-  "homepage": "https://sarveshgulhane.github.io/",
+  "name": "sarveshgulhane.com",
+  "homepage": "https://sarveshgulhane.com/",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "predeploy": "bun run build",
